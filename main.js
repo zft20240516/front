@@ -1,3 +1,3 @@
-function do OnClick(e){
+function doOnClick(e){
   alert("unknown click")
 }
