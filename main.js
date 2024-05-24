@@ -4,8 +4,9 @@ function doOnClick(e){
       "https://script.google.com/macros/s/AKfycbxQIauCFmNGu_PPzqCrwxPVoDTQw4L5qoJmnGHje8ujTDFUj36EqaO1EKixgp8vsdk6/exec",
       {redirect: "follow", mode: "no-cors"}
   ).then((resp) => {
+    console.log(resp);
     resp.Body.text().then((s) => {
-      document.getElementById("status").innerText = s
+      document.getElementById("status").innerText = s;
     })
   })
 }
