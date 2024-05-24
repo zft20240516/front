@@ -6,6 +6,7 @@ function doOnClick(e){
   ).then((resp) => {
     console.log(resp);
     resp.text().then((s) => {
+      console.log(s);
       document.getElementById("status").innerText = s;
     })
   })
