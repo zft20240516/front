@@ -5,7 +5,7 @@ function doOnClick(e){
       {redirect: "follow", mode: "no-cors"}
   ).then((resp) => {
     console.log(resp);
-    resp.Body.text().then((s) => {
+    resp.text().then((s) => {
       document.getElementById("status").innerText = s;
     })
   })
