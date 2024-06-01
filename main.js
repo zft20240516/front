@@ -8,7 +8,7 @@ function doOnClick(e){
     let a = s.split(":",2);
     let name = a.shift().trim(); if (name == ""){continue}
     if (a.length = 0){a[0]=""}
-    parameter[name] = a[0];
+    parameter[name] = a[0].trim();
   }
   fetch(
       "https://script.google.com/macros/s/AKfycbxQIauCFmNGu_PPzqCrwxPVoDTQw4L5qoJmnGHje8ujTDFUj36EqaO1EKixgp8vsdk6/exec",
