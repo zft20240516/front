@@ -1,7 +1,7 @@
 function dgebi(id){return document.getElementById(id)}
 
 function doOnClick(e){
-  let query = dgebi("query").value.split("\r");
+  let query = dgebi("query").value.split("\n");
   let action = query.shift().trim();
   let parameter = {}
   for (const s of query){
