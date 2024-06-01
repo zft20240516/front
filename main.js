@@ -17,7 +17,7 @@ function doOnClick(e){
         redirect: "follow",
         amode: "no-cors",
         headers: {"Content-Type": "text/plain"},
-        body: `{"aaa": "bbb", "bbb": "aaa", "ccc": ["bbb", "aaa", "ccc"], "action": ${action}, "parameter": ${JSON.stringify(parameter)}}`
+        body: `{"aaa": "bbb", "bbb": "aaa", "ccc": ["bbb", "aaa", "ccc"], "action": "${action}", "parameter": ${JSON.stringify(parameter)}}`
       }
   ).then((resp) => {
     console.log(resp);
