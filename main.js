@@ -7,7 +7,7 @@ function doOnClick(e){
   for (const s of query){
     let a = s.split(":",2);
     let name = a.shift().trim(); if (name == ""){continue}
-    if (a.length = 0){a[0]=" "}
+    if (a.length == 0){a[0]=" "}
     parameter[name] = a[0].trim();
   }
   fetch(
