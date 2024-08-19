@@ -3,6 +3,6 @@ function eClick_btnTest(e){
 }
 
 window.addEventListener("click", (e) => {
-  if ((const _EventName = "eClick_" + e.target.id) && (const _Handler = window[_EventName]) && (typeOf(_Handler == "function"))){_Handler(e); return}
+  if ((let _EventName = "eClick_" + e.target.id) && (let _Handler = window[_EventName]) && (typeOf(_Handler == "function"))){_Handler(e); return}
   console.log(e);
 })
