@@ -2,6 +2,6 @@ function test1(){
   
 }
 
-Window.addEventListener("click", (e) => {
-  Console.log(e);
+window.addEventListener("click", (e) => {
+  console.log(e);
 })
