@@ -1,13 +1,27 @@
+<!DOCTYPE html>
 <html>
-  <header>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="test.css" rel="stylesheet">
+    <link rel="icon" href="ico/favicon.ico"/>
     <script src="test.js"></script>
-  </header>
+  </head>
   <body>
     <H1>TEST</H1>
-    <textarea id="txtSource"></textarea>
-    <div id="pnlActions">
-      <button id="btnTest">
+    <input id="selSourceText" type="radio" name="Source" value="Text" checked="checked"><input id="selSourceFile" type="radio" name="Source" value="File">
+    <div id="pnlSource">
+      <br><input id="inpSourceFile" type="file">
+      <br><textarea id="txtSource" cols="40" rows="6"></textarea>
     </div>
-    <textarea id="txtDestination"></textarea>   
+    <div id="pnlActions">
+      <button id="btnTest">test</button>
+      <button id="btnToB64">to BASE64</button>
+      <button id="btnFromB64">from BASE64</button>
+      <button id="btnToURL">to URL</button>
+      <button id="btnFromURL">from URL</button>
+      <button id="btnToFile">to file</button>
+    </div>
+    <textarea id="txtDestination" cols="40" rows="6"></textarea>   
   </body>
 </html>

@@ -1,0 +1,24 @@
+:root {
+  color-scheme: light dark; /* both supported */
+}
+
+html {
+  color: #f0f0f0;
+  background-color: #0a0a0a;
+}
+
+button, input {
+  min-width: 8mm;
+  min-height: 8mm;
+  margin: 3mm;
+}
+
+#inpSourceFile, #txtSource {
+  display: none;
+}
+
+#selSourceFile:checked ~ #pnlSource #inpSourceFile,
+#selSourceText:checked ~ #pnlSource #txtSource
+  {
+    display: block;
+  }
