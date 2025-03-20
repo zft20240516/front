@@ -1,0 +1,22 @@
+<http>
+  <head>
+    <script>
+      function test(e){
+        var result = document.getElementById('result');result.innerText = '';
+        var v = document.getElementById('sn').value;
+        fetch(localStorage.getItem('DS_Dog1') + v + '/').then((r) => {
+          r.json().then((o) => {
+            console.log(o);
+            result.innerText = JSON.stringify(o,null,'  ');
+          });
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <input type="text" id="sn">
+    <button onclick="test();">test</button>
+    <div><pre id="result"></pre></div>
+  </body>
+</http>
+
