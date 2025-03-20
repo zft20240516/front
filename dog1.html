@@ -1,6 +1,12 @@
 <http>
   <head>
     <script>
+      function changeOptions(){
+        var old = localStorage.getItem('DS_Dog1');
+        var v = prompt("change value for data source",old);
+        if((v == null) || (v == old)){return}
+        localStorage.setItem('DS_Dog1',v);
+      }
       function test(e){
         var result = document.getElementById('result');result.innerText = '';
         var v = document.getElementById('sn').value;
@@ -14,6 +20,7 @@
     </script>
   </head>
   <body>
+    <div><button onclick="changeOptions();">... options ...</button></div>
     <input type="text" id="sn">
     <button onclick="test();">test</button>
     <div><pre id="result"></pre></div>
